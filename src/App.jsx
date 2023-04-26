@@ -2,7 +2,7 @@ import "./App.css";
 import CurrentWeather from "./components/CurrentWeather/CurrentWeather";
 import { WEATHER_API_URL } from "./api";
 import { WEATHER_API_KEY } from "./api";
-import Search from "./components/search/search";
+import Search from "./components/search/Search";
 import { useState } from "react";
 import Forecast from "./components/Forecast/Forecast";
 
@@ -27,7 +27,6 @@ function App() {
       })
       .catch((err) => console.log(err));
   };
-  console.log(currentWeather);
 
   return (
     <div className="container">
